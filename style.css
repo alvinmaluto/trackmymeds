@@ -1,0 +1,321 @@
+/*
+Theme Name: Alvin's Wordpress Theme
+Theme URI: -
+Author: Alvin Maluto
+Author URI: http://www.alvinmaluto.com/
+Description: Personal Portfolio Theme 2016
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main, footer {
+    font-family: 'Maven Pro', sans-serif;
+    color: #333;
+}
+
+#main, #header-inner, #footer-inner, #nav-inner {
+    margin: 0 auto;
+}
+
+#mywork, #about, #contact {
+    margin: 6em 0;
+}
+
+header, footer {
+    width: 100%;
+}
+
+nav {
+    border-top: 1px solid #eee;
+}
+
+div#start {
+    margin: 60em auto;
+}
+
+div#start h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+#main {
+    overflow: hidden;
+    text-align: center;
+    /* background-image: url("images/bg.jpg"); */
+    background-position: center center;
+    background-size: cover;
+}
+
+#main-content {
+    margin: 4em auto;
+    padding: 0.1em 3em;
+    line-height: 1.4em;
+    background: rgba(255, 255, 255, 0.7);
+    width: 70%;
+}
+
+header {
+    position: fixed;
+    z-index:99999;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    font-family: 'Maven Pro', sans-serif;
+    color: rgba(20, 20, 20, 0.9);
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+footer {
+    padding: 2em 0
+}
+
+#footer-inner {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#footer-inner > *:first-child {
+    margin-top: 0;
+}
+
+#footer-inner > *:last-child {
+    margin-bottom: 0;
+}
+
+#nav-inner li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 0.6em;
+
+}
+
+#nav-inner li a {
+    background-color: transparent;
+    padding: 0.5em 1em;
+    display: block;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#nav-inner li a:hover {
+    background: linear-gradient(to top, rgba(234, 234, 234, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+#nav-inner li a:focus {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+#nav-inner li a.current {
+    color: #000;
+}
+
+.captioned-image {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.captioned-image:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.captioned-image p.caption {
+    margin: 5px 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.captioned-image a:hover {
+    text-decoration: none;
+}
+
+#main-content > .float-left {
+    float: left;
+    margin: 5px 15px 5px 0px;
+}
+
+#main-content > .float-right {
+    float: right;
+    margin: 5px 0px 5px 15px;
+}
+
+article#main-content p {
+    font-size: 0.8em;
+}
+
+h2 a:hover{
+    text-decoration: none;
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+h2 {
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(20, 20, 20, 0.9);
+    padding: 15px;
+    text-align: center;
+    width: 35%;
+    margin: 1em auto;
+    letter-spacing: 4px;
+}
+
+h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.menu-anchored-menu-container {
+    float: right;
+    padding: 1.2em;
+}
+
+a.logo {
+    float: left;
+    padding: 1em 0 0 1.5em;
+}
+
+.textwidget {
+    color: #333;
+    margin-top: 3em;
+}
+
+ul#menu-footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+ul#menu-footer-menu a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul#menu-footer-menu a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    text-align: left;
+}
+
+blockquote ul li {
+    font-size: 0.8em;
+}
+
+#navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    top: 10px;
+}
+
+#navlist li, #navlist a {
+    height: 30px;
+    display: block;
+}
+
+ul#navlist {
+    padding: 0;
+    margin: 0;
+}
+
+#social-links {
+    background: url('images/social-links-sprite.svg');
+    height: 20px; */
+}
+
+#instagram {
+    background: url('images/social-links-sprite.svg') 0 0;
+    height: 20px;
+}
+
+#instagram a:hover {
+    background: url('images/social-links-sprite.svg') -20px -20px;
+}
+
+#pinterest {
+    height: 20px;
+    background: url('images/social-links-sprite.svg') -20px 0;
+}
+
+#pinterest a:hover {
+    background: url('images/social-links-sprite.svg') -60px -20px;
+}
+
+.twitter {
+    height: 20px;
+    background: url('images/social-links-sprite.svg') -80px 0;
+}
+
+#twitter a:hover {
+    background: url('images/social-links-sprite.svg') -40px -20px;
+}
+
+#linkedin {
+    height: 20px;
+    background: url('images/social-links-sprite.svg') -100px 0;
+}
+
+#linkedin a:hover {
+    background: url('images/social-links-sprite.svg') 110 -20px;
+}
+
+#mywork div {
+    display: inline-block;
+}
+
+div#mywork img {
+    border: solid;
+    border-width: 1px;
+    border-color: #b4b9be;
+    width: 100%;
+    height: 100%;
+}
+
+div#mywork img:hover {
+    opacity: 0.5;
+    -webkit-transition: opacity .3s linear;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  margin-bottom: 4em;
+}
