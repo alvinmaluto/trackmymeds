@@ -1,0 +1,1499 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.footer h2,.footer p {
+	color:#FFFFFF;
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    body {
+    font-family:helvetica;
+    font-size: 12px;
+    padding-top: 40px;
+    background-color: #FFFFFF;
+    }
+
+  #h {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#b30000
+
+  }
+
+
+
+  .container{
+    max-width: 1024px;
+    margin: 20px auto 0;
+    padding: 0px 5px;
+    color: black;
+  }
+
+  /* Set bottom padding (fixed top nav requires bottom padding) */
+  .container-fluid {
+    padding-bottom:40px;
+  }
+
+
+  /*Top Navigation */
+  .nav {
+    height: 50px;
+    /* Set Height when login/sign up displays inline */
+  }
+
+  /* Main Navigation */
+  .navbar-fixed-top {
+    background-color: #171F68;
+  }
+  /*Right Navigation */
+  .navbar-right {
+    background-color: #F2D5A0;
+    padding-right:50px;
+  }
+
+  .navbar-right > li {
+    float:left; /* Need media Query for mobile */
+    display: inline;
+  }
+
+  .navbar-right li a{
+    color:#FFFFFF;
+  }
+
+  /*Logo in Navigation */
+  .navbar-brand {
+    padding: 0px;
+    background-color: #171F68; /* Remove this when the brand logo's padding is fixed*/
+  }
+
+  /*Navigation List */
+  .navbar li a{
+    color:#FFFFFF;
+  }
+
+  /*Collapsed Navigation Icon */
+  .icon-bar {
+      background-color: white;
+  }
+
+  #login{
+    text-align: center;
+    height: 500px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+
+  .loginform {
+    width:50%;
+    height: 90%;
+    background-color:white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .loginform h2{
+    color: #8C1B16;
+  }
+
+  #error{
+      color: red;
+  }
+
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  ---buttonstuff
+
+  .btn-primary:hover {
+      color: #fff;
+      background-color: #F54F29;
+      border-color: #204d74;
+  }
+
+
+  #logo {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    z-index:2;
+  }
+
+  /* I commented out the html for this - Keith
+  #hero {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+  } */
+
+  /* Shortcut = 3 Images on Index */
+  #shortcut {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  /* Order and Phone Banner */
+  #shortcut1 {
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Order Icon 1 */
+#shortcut3 {
+  width: 70px;
+  height: 70px;
+  margin-left: 40%;
+  display: block;
+  float: left;
+}
+
+/* Order Icon 2,3,4 */
+#shortcut2 {
+  width: 70px;
+  height: 70px;
+  margin-left: 40%;
+  display: block;
+  float: left;
+  margin-top: 20%;
+}
+/*Order Buttons */
+.add_field_button {
+ margin-left:20%;
+ margin-bottom:10px;
+ padding:5px;
+  }
+
+ .remove_field{
+  margin-left:20%;
+
+  }
+
+/* Create create acc and edit acc background image*/
+#im {
+      width: 900px;
+      height: 1000px;
+      display: block;
+      margin-left: auto;
+      position:relative;
+      margin-top: 0;
+      margin-right: auto;
+      z-index: -1;
+}
+/*Create order and edit order box*/
+.container2{
+      background-color:#F2D5A0;
+      margin-top:  -888px;
+      margin-left: 35%;
+      margin-right: 20%;
+      padding: 0px 5px;
+      margin-bottom: 20%;
+}
+/*Form css edit and create*/
+.form-group1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #BA2020;
+}
+
+/* Form CSS */
+.form-group {
+  margin-left: 17%;
+  margin-right: 3%;
+}
+
+/*Text */
+.texts {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+
+.texts2 {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+/*Summit button*/
+.btn1btn-default {
+
+  width: 160px;
+  height: 40px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: 5%;
+  margin-left: 70%;
+  background-color:#BA2020;
+  color: white;
+}
+
+.row1 {
+  padding-top: 10%;
+}
+
+/*Form Submit Button */
+  .btnbtn-default{
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 5%;
+  margin-bottom: -50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color:#010326;
+  color: white;
+}
+
+/* Form pink box */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  section {
+    /*
+	Greg commented this out, section is just used to divide the page
+	into semantic sections, it should probably just be the same colour as the body.
+    background-color: #D88A7A;*/
+    border-radius: 4px;
+  }
+
+  /* Order Form Pink Box/Background */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  /*View Order */
+  .form-group h2 {
+   color: #8C1B16;
+  }
+
+  #filter-order h3 {
+   color: #8C1B16;
+  }
+
+
+
+
+
+  /*Tables */
+  #view-order p {
+    color:black;
+  }
+
+
+
+  /*Footer */
+  .footer {
+    position: relative;
+    bottom:0;
+    width:100%;
+    background-color:#171F68;
+
+  }
+
+  .footer section {
+    background: none;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+  }
+
+  .footer h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 12px;
+
+  }
+
+  .footer img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #details {
+    float:right;
+    margin-top: -20px;
+    margin-right: 15px;
+  }
+
+  /* Carousel */
+  #myCarousel {
+    width:100%;
+    height:400px;
+    overflow:hidden;
+  }
+
+}
+
+/* PORTRAIT TABLET */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+    font-family:helvetica;
+    font-size: 12px;
+    padding-top: 40px;
+    background-color: #FFFFFF;
+
+  }
+
+  #h {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#b30000
+
+  }
+
+  .container{
+    max-width: 1024px;
+    margin: 20px auto 0;
+    padding: 0px 5px;
+    color: black;
+  }
+
+  /* Set bottom padding (fixed top nav requires bottom padding) */
+  .container-fluid {
+    padding-bottom:40px;
+  }
+
+
+  /*Top Navigation */
+  .nav {
+    height: 50px;
+    /* Set Height when login/sign up displays inline */
+
+  }
+
+  /* Main Navigation */
+  .navbar-fixed-top {
+    background-color: #171F68;
+  }
+  /*Right Navigation */
+  .navbar-right {
+    background-color: #F2D5A0;
+    padding-right:50px;
+  }
+
+  .navbar-right > li {
+    float:left; /* Need media Query for mobile */
+    display: inline;
+  }
+
+  .navbar-right li a{
+    color:#FFFFFF;
+  }
+
+  /*Logo in Navigation */
+  .navbar-brand {
+    padding: 0px;
+    background-color: #171F68; /* Still need to fix the brand logo's padding*/
+  }
+
+  /*Collapsed Navigation Icon */
+  .icon-bar {
+      background-color: white;
+  }
+
+    #login{
+    text-align: center;
+    height: 500px;
+    padding-top: 7%;
+    padding-bottom: 2%;
+  }
+
+  .loginform {
+    width:50%;
+    height: 90%;
+    background-color:white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .loginform h2{
+    color: #8C1B16;
+  }
+
+  #error{
+      color: red;
+  }
+
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  ---buttonstuff
+
+  .btn-primary:hover {
+      color: #fff;
+      background-color: #F54F29;
+      border-color: #204d74;
+  }
+
+
+  #logo {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    z-index:2;
+  }
+
+  /* I commented out the html for this - Keith
+  #hero {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+  } */
+
+  /* Shortcut = 3 Images on Index */
+  #shortcut {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  /* Order and Phone Banner */
+  #shortcut1 {
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Order Icon 1 */
+  #shortcut3 {
+	width: 70px;
+	height: 70px;
+	margin-left: 40%;
+	display: block;
+	float: left;
+  }
+
+/* Order Icon 2,3,4 */
+  #shortcut2 {
+	width: 70px;
+	height: 70px;
+	margin-left: 40%;
+	display: block;
+	float: left;
+	margin-top: 20%;
+  }
+
+  /*Order Buttons */
+  .add_field_button {
+   margin-left:20%;
+   margin-bottom:10px;
+   padding:5px;
+	}
+
+ .remove_field{
+  margin-left:20%;
+
+  }
+
+  /* Create create acc and edit acc background image*/
+#im {
+      width: 900px;
+      height: 1000px;
+      display: block;
+      margin-left: auto;
+      position:relative;
+      margin-top: 0;
+      margin-right: auto;
+      z-index: -1;
+}
+/*Create order and edit order box*/
+.container2{
+      background-color:#F2D5A0;
+      margin-top:  -888px;
+      margin-left: 35%;
+      margin-right: 20%;
+      padding: 0px 5px;
+      margin-bottom: 20%;
+}
+/*Form css edit and create*/
+.form-group1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #BA2020;
+}
+
+/* Form CSS */
+.form-group {
+  margin-left: 17%;
+  margin-right: 3%;
+}
+
+/*Text */
+.texts {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+
+.texts2 {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+/*Summit button*/
+.btn1btn-default {
+
+  width: 160px;
+  height: 40px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: 5%;
+  margin-left: 70%;
+  background-color:#BA2020;
+  color: white;
+}
+
+.row1 {
+  padding-top: 10%;
+}
+
+/*Form Submit Button */
+  .btnbtn-default{
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 5%;
+  margin-bottom: -50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color:#010326;
+  color: white;
+}
+
+/* Form pink box */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+  section {
+    /*Greg commented this out, section is just used to divide the page
+	into semantic sections, it should probably just be the same colour as the body.
+    background-color: #D88A7A;*/
+    border-radius: 4px;
+  }
+
+  /* Order Form Pink Box/Background */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  /*View Order */
+  .form-group h2 {
+   color: #8C1B16;
+  }
+
+  #filter-order h3 {
+   color: #8C1B16;
+  }
+
+
+  /*Tables */
+  #view-order p {
+    color:black;
+  }
+
+  /*Footer */
+  .footer {
+    position: relative;
+    bottom:0;
+    width:100%;
+    background-color:#171F68;
+
+  }
+
+  .footer section {
+    background: none;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+  }
+
+  .footer h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 12px;
+
+  }
+
+  .footer img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #details {
+    float:right;
+    margin-top: -20px;
+    margin-right: 15px;
+  }
+
+  /* Carousel */
+  #myCarousel {
+    width:100%;
+    height:300px;
+    overflow:hidden;
+  }
+
+}
+
+/* LANDSCAPE TABLET */
+@media (max-width: 767px) {
+    body {
+    font-family:helvetica;
+    font-size: 12px;
+    padding-top: 40px;
+    background-color: #FFFFFF;
+
+  }
+
+  #h {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#b30000
+
+  }
+
+  .container{
+    max-width: 1024px;
+    margin: 20px auto 0;
+    padding: 0px 5px;
+    color: black;
+  }
+
+  /* Set bottom padding (fixed top nav requires bottom padding) */
+  .container-fluid {
+    padding-bottom:40px;
+  }
+
+
+  /*Top Navigation */
+  .nav {
+    /*height: 50px;
+    Set Height when login/sign up displays inline */
+
+  }
+
+  /* Main Navigation */
+  .navbar-fixed-top {
+    background-color: #171F68;
+  }
+  /*Right Navigation */
+  .navbar-right {
+    background-color: #F2D5A0;
+  }
+
+  .navbar-right > li {
+    float:left; /* Need media Query for mobile */
+    display: inline;
+  }
+
+  .navbar-right li a{
+    color:#FFFFFF;
+  }
+
+  /*Logo in Navigation */
+  .navbar-brand {
+    padding: 0px;
+    background-color: #171F68; /* Remove this when the brand logo's padding is fixed*/
+  }
+
+  .navbar-brand img {
+    width:100px;
+  }
+
+  /*Collapsed Navigation Icon */
+  .icon-bar {
+      background-color: white;
+  }
+
+  #login{
+    text-align: center;
+    height: 500px;
+    padding-top: 7%;
+    padding-bottom: 2%;
+  }
+
+  .loginform {
+    width:50%;
+    height: 90%;
+    background-color:white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .loginform h2{
+    color: #8C1B16;
+  }
+
+  #error{
+      color: red;
+  }
+
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  ---buttonstuff
+
+  .btn-primary:hover {
+      color: #fff;
+      background-color: #F54F29;
+      border-color: #204d74;
+  }
+
+
+  #logo {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    z-index:2;
+  }
+
+  /* I commented out the html for this - Keith
+  #hero {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+  } */
+
+  /* Shortcut = 3 Images on Index */
+  #shortcut {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  /* Order and Phone Banner */
+  #shortcut1 {
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Order Icon 1 */
+#shortcut3 {
+  width: 70px;
+  height: 70px;
+  margin-left: 40%;
+  display: block;
+  float: left;
+}
+
+/* Order Icon 2,3,4 */
+#shortcut2 {
+  width: 70px;
+  height: 70px;
+  margin-left: 40%;
+  display: block;
+  float: left;
+  margin-top: 20%;
+}
+/*Order Buttons */
+.add_field_button {
+ margin-left:20%;
+ margin-bottom:10px;
+ padding:5px;
+  }
+
+ .remove_field{
+  margin-left:20%;
+
+  }
+
+/* Create create acc and edit acc background image*/
+#im {
+      width: 900px;
+      height: 1000px;
+      display: block;
+      margin-left: auto;
+      position:relative;
+      margin-top: 0;
+      margin-right: auto;
+      z-index: -1;
+}
+/*Create order and edit order box*/
+.container2{
+      background-color:#F2D5A0;
+      margin-top:  -888px;
+      margin-left: 35%;
+      margin-right: 20%;
+      padding: 0px 5px;
+      margin-bottom: 20%;
+}
+/*Form css edit and create*/
+.form-group1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #BA2020;
+}
+
+/* Form CSS */
+.form-group {
+  margin-left: 17%;
+  margin-right: 3%;
+}
+
+/*Text */
+.texts {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+
+.texts2 {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+/*Summit button*/
+.btn1btn-default {
+
+  width: 160px;
+  height: 40px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: 5%;
+  margin-left: 70%;
+  background-color:#BA2020;
+  color: white;
+}
+
+.row1 {
+  padding-top: 10%;
+}
+
+/*Form Submit Button */
+  .btnbtn-default{
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 5%;
+  margin-bottom: -50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color:#010326;
+  color: white;
+}
+
+/* Form pink box */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  section {
+     /*Greg commented this out, section is just used to divide the page
+	into semantic sections, it should probably just be the same colour as the body.
+    background-color: #D88A7A;*/
+    border-radius: 4px;
+  }
+
+  /* Order Form Pink Box/Background */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  /*View Order */
+  .form-group h2 {
+   color: #8C1B16;
+  }
+
+  #filter-order h3 {
+   color: #8C1B16;
+  }
+
+
+  /*Tables */
+  #view-order p {
+    color:black;
+  }
+
+
+  /*Footer */
+  .footer {
+    position: relative;
+    bottom:0;
+    width:100%;
+    background-color:#171F68;
+
+  }
+
+  .footer section {
+    background: none;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+  }
+
+  .footer h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 12px;
+
+  }
+
+  .footer img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #details {
+    float:right;
+    margin-top: -20px;
+    margin-right: 15px;
+  }
+
+  /* Carousel */
+  #myCarousel {
+    width:100%;
+    height:225px;
+    overflow:hidden;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    body {
+    font-family:helvetica;
+    font-size: 12px;
+    padding-top: 40px;
+    background-color: #FFFFFF;
+
+  }
+
+  #h {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#b30000
+
+  }
+
+  .container{
+    max-width: 1024px;
+    margin: 20px auto 0;
+    padding: 0px 5px;
+    color: black;
+  }
+
+  /* Set bottom padding (fixed top nav requires bottom padding) */
+  .container-fluid {
+    padding-bottom:40px;
+  }
+
+
+  /*Top Navigation */
+  .nav {
+    /*height: 50px;
+    Set Height when login/sign up displays inline */
+
+  }
+
+  /* Main Navigation */
+  .navbar-fixed-top {
+    background-color: #171F68;
+
+  }
+
+  /*Right Navigation */
+  .navbar-right {
+    background-color: #F2D5A0;
+  }
+
+  .navbar-right > li {
+    float:left; /* Need media Query for mobile */
+    display: inline;
+  }
+
+  .navbar-right li a{
+    color:#FFFFFF;
+  }
+
+  /*Logo in Navigation */
+  .navbar-brand {
+    padding: 0px;
+    background-color: #171F68; /* Remove this when the brand logo's padding is fixed*/
+  }
+
+  .navbar-brand img {
+    width: 80px;
+  }
+
+  /*Collapsed Navigation Icon */
+  .icon-bar {
+      background-color: white;
+  }
+
+    #login{
+    text-align: center;
+    height: 500px;
+    padding-top: 7%;
+    padding-bottom: 2%;
+  }
+
+  .loginform {
+    width:90%;
+    height: 90%;
+    background-color:white;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .loginform h2{
+    color: #8C1B16;
+  }
+
+  #error{
+      color: red;
+  }
+
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  ---buttonstuff
+
+  .btn-primary:hover {
+      color: #fff;
+      background-color: #F54F29;
+      border-color: #204d74;
+  }
+
+
+  #logo {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    z-index:2;
+  }
+
+  /* I commented out the html for this - Keith
+  #hero {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+  } */
+
+  /* Shortcut = 3 Images on Index */
+  #shortcut {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  /* Order and Phone Banner */
+  #shortcut1 {
+  width: 250px;
+  height: 50px;
+  margin-top: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Order Icon 1 */
+#shortcut3 img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5%;
+  display: block;
+  float: left;
+}
+
+/* Order Icon 2,3,4 */
+#shortcut2 img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5%;
+  display: block;
+  float: left;
+  margin-top: 20%;
+}
+/*Order Buttons */
+.add_field_button {
+ margin-left:20%;
+ margin-bottom:10px;
+ padding:5px;
+  }
+
+ .remove_field{
+  margin-left:20%;
+
+  }
+
+/* Create create acc and edit acc background image*/
+#im {
+      width: 900px;
+      height: 1000px;
+      display: block;
+      margin-left: auto;
+      position:relative;
+      margin-top: 0;
+      margin-right: auto;
+      z-index: -1;
+}
+/*Create order and edit order box*/
+.container2{
+      background-color:#F2D5A0;
+      margin-top:  -888px;
+      margin-left: 35%;
+      margin-right: 20%;
+      padding: 0px 5px;
+      margin-bottom: 20%;
+}
+/*Form css edit and create*/
+.form-group1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #BA2020;
+}
+
+/* Form CSS */
+.form-group {
+  margin-left: 17%;
+  margin-right: 3%;
+}
+
+/*Text */
+.texts {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+
+.texts2 {
+  margin-left: 3%;
+  color: #BA2020;
+}
+
+/*Summit button*/
+.btn1btn-default {
+
+  width: 160px;
+  height: 40px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  margin-right: 5%;
+  margin-left: 70%;
+  background-color:#BA2020;
+  color: white;
+}
+
+.row1 {
+  padding-top: 10%;
+}
+
+/*Form Submit Button */
+  .btnbtn-default{
+  max-width: 900px;
+  width: 800px;
+  height: 100px;
+  margin-top: 5%;
+  margin-bottom: -50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color:#010326;
+  color: white;
+}
+
+/* Form pink box */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  section {
+    /*Greg commented this out, section is just used to divide the page
+	into semantic sections, it should probably just be the same colour as the body.
+    background-color: #D88A7A;*/
+    border-radius: 4px;
+  }
+
+  /* Order Form Pink Box/Background */
+  .container1{
+    max-width: 900px;
+    background-color:#D88A7A;
+    margin: -50px auto 0;
+    padding: 0px 5px;
+    margin-bottom: 20%
+  }
+
+  /*View Order */
+  .form-group h2 {
+   color: #8C1B16;
+  }
+
+  #filter-order h3 {
+   color: #8C1B16;
+  }
+
+
+  /*Tables */
+  #view-order p {
+    color:black;
+  }
+
+
+  /*Footer */
+  .footer {
+    position: relative;
+    bottom:0;
+    width:100%;
+    background-color:#171F68;
+
+  }
+  .footer .col-md-4 {
+  	height:100px;
+  }
+
+  .footer section {
+    background: none;
+    padding:;
+
+  }
+
+  .footer h2 {
+    font-size: 16px;
+  }
+
+  .footer h3 {
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 10px;
+
+  }
+
+  .footer img {
+    margin-top:10px;
+    margin-bottom:10px;
+    width: 60px;
+    height: 60px;
+
+  }
+
+  #details {
+    padding-right:10px;
+    margin-top: 0px;
+    margin-right: 0px;
+
+  }
+
+  /* Carousel */
+  #myCarousel {
+    width:100%;
+    height: 150px;
+    overflow:hidden;
+  }
+
+}
+
+.navbar-header a:hover {
+  background-color: #8C1B16;
+}
+
+.footer p {
+	/*color: #ffffff;*/
+}

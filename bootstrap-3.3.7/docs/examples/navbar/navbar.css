@@ -1,0 +1,65 @@
+body {
+  padding-top: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+/*Removes margin spacing at top and bottom of buttons of navbar*/
+.navbar-nav {
+  margin: 0;
+}
+
+/*Middle align Text in Navigational Bar, Fixes Nav menu buttons colour & Aligns Mobile Menu items to right (Doesn't cover logo)*/
+.nav>li>a {
+  padding: 15px;
+  color: #fff;
+  text-align: right;
+}
+
+/*Navagational bar buttons hover-over colour set to #8C1B16 (Maroon colour)*/
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #8C1B16;
+  color: #fff;
+}
+
+/*'My Orders' dropdown menu button background colour set to #8C1B16 (Maroon colour)*/
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #8C1B16;
+}
+
+/*Removes margin space on the right of the Right Navigational Bar*/
+.navbar-right {
+  margin: 0 -15px;
+  padding-right: 15px;
+}
+
+/*Navbar-right icon and text colour set to #8C1B16 */
+.navbar-right li a {
+  color: #8C1B16;
+}
+
+/*Dropdown-menu colour set to #F6DEB3*/
+.dropdown-menu {
+  background-color: #F6DEB3;
+  padding: 0;
+}
+
+/*Dropdown-menu text colour set to #8C1B16 & mobile dropdown-menu background-color set to #F6DEB3 (Wheat colour)*/
+.dropdown-menu > li > a {
+  color: #8C1B16;
+  background-color: #F6DEB3;
+}
+
+/*Align navbar-right items to right (for mobile design)*/
+ul.nav.navbar-right {
+  float: right;
+}
+
+/*Align dropdown-menu to right (for mobile design)*/
+ul.dropdown-menu {
+    text-align: right;
+}

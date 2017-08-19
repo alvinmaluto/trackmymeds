@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Application Test Suite" tests="181" assertions="229" failures="0" errors="0" time="0.036099">
+    <testsuite name="ValidationTest" file="G:\xampp\htdocs\IFB299\tests\formValidationTest.php" tests="133" assertions="133" failures="0" errors="0" time="0.024941">
+      <testsuite name="ValidationTest::testCheckEmailEquals" tests="25" assertions="25" failures="0" errors="0" time="0.006459">
+        <testcase name="testCheckEmailEquals with data set #0" assertions="1" time="0.002144">
+          <system-out>string(17) "email@example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #1" assertions="1" time="0.000208">
+          <system-out>string(30) "firstname.lastname@example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #2" assertions="1" time="0.000244">
+          <system-out>string(27) "email@subdomain.example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #3" assertions="1" time="0.000237">
+          <system-out>string(30) "firstname+lastname@example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #4" assertions="1" time="0.000208">
+          <system-out>string(22) "1234567890@example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #5" assertions="1" time="0.000180">
+          <system-out>string(21) "email@example-one.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #6" assertions="1" time="0.000179">
+          <system-out>string(18) "______@example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #7" assertions="1" time="0.000167">
+          <system-out>string(19) "email@example.co.jp"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #8" assertions="1" time="0.000166">
+          <system-out>string(30) "firstname-lastname@example.com"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #9" assertions="1" time="0.000162">
+          <system-out>string(12) "plainaddress"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #10" assertions="1" time="0.000176">
+          <system-out>string(16) "#@%^%#$@#$@#.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #11" assertions="1" time="0.000175">
+          <system-out>string(12) "@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #12" assertions="1" time="0.000167">
+          <system-out>string(29) "Joe Smith &lt;email@example.com&gt;"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #13" assertions="1" time="0.000163">
+          <system-out>string(17) "email.example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #14" assertions="1" time="0.000170">
+          <system-out>string(25) "email@example@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #15" assertions="1" time="0.000170">
+          <system-out>string(18) ".email@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #16" assertions="1" time="0.000165">
+          <system-out>string(18) "email.@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #17" assertions="1" time="0.000165">
+          <system-out>string(24) "email..email@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #18" assertions="1" time="0.000171">
+          <system-out>string(27) "あいうえお@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #19" assertions="1" time="0.000180">
+          <system-out>string(29) "email@example.com (Joe Smith)"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #20" assertions="1" time="0.000176">
+          <system-out>string(13) "email@example"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #21" assertions="1" time="0.000172">
+          <system-out>string(18) "email@-example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #22" assertions="1" time="0.000165">
+          <system-out>string(23) "email@111.222.333.44444"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #23" assertions="1" time="0.000178">
+          <system-out>string(18) "email@example..com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckEmailEquals with data set #24" assertions="1" time="0.000171">
+          <system-out>string(20) "Abc..123@example.com"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckPassword" tests="4" assertions="4" failures="0" errors="0" time="0.000725">
+        <testcase name="testCheckPassword with data set #0" assertions="1" time="0.000246">
+          <system-out>string(8) "test1234"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPassword with data set #1" assertions="1" time="0.000161">
+          <system-out>string(9) "891@ADW)A"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPassword with data set #2" assertions="1" time="0.000160">
+          <system-out>string(14) "IAWmAWidAAWDW9"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPassword with data set #3" assertions="1" time="0.000158">
+          <system-out>string(8) "password"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckName" tests="4" assertions="4" failures="0" errors="0" time="0.000705">
+        <testcase name="testCheckName with data set #0" assertions="1" time="0.000227">
+          <system-out>string(7) "Michael"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckName with data set #1" assertions="1" time="0.000159">
+          <system-out>string(29) "Somethingreallylongandunusual"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckName with data set #2" assertions="1" time="0.000161">
+          <system-out>string(8) "El Mucho"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckName with data set #3" assertions="1" time="0.000158">
+          <system-out>string(1) "A"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckFullName" tests="4" assertions="4" failures="0" errors="0" time="0.000712">
+        <testcase name="testCheckFullName with data set #0" assertions="1" time="0.000232">
+          <system-out>string(18) "Michael Smallcombe"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckFullName with data set #1" assertions="1" time="0.000162">
+          <system-out>string(31) "Something Very Long And Unusual"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckFullName with data set #2" assertions="1" time="0.000159">
+          <system-out>string(8) "El Mucho"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckFullName with data set #3" assertions="1" time="0.000159">
+          <system-out>string(1) "C"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckPhone" tests="8" assertions="8" failures="0" errors="0" time="0.001349">
+        <testcase name="testCheckPhone with data set #0" assertions="1" time="0.000234">
+          <system-out>string(9) "3020 2902"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #1" assertions="1" time="0.000161">
+          <system-out>string(13) "(03)3291 2891"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #2" assertions="1" time="0.000157">
+          <system-out>string(8) "32912891"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #3" assertions="1" time="0.000160">
+          <system-out>string(12) "0429 109 091"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #4" assertions="1" time="0.000160">
+          <system-out>string(10) "0429109091"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #5" assertions="1" time="0.000161">
+          <system-out>string(16) "(+61)423 109 189"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #6" assertions="1" time="0.000158">
+          <system-out>string(14) "(+61)423109189"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPhone with data set #7" assertions="1" time="0.000158">
+          <system-out>string(2) "39"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckAddress" tests="8" assertions="8" failures="0" errors="0" time="0.001501">
+        <testcase name="testCheckAddress with data set #0" assertions="1" time="0.000248">
+          <system-out>string(26) "20 Maple Street, Somewhere"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #1" assertions="1" time="0.000191">
+          <system-out>string(14) "12 As Dr, Near"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #2" assertions="1" time="0.000202">
+          <system-out>string(18) "1231 Derp St, Merp"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #3" assertions="1" time="0.000171">
+          <system-out>string(17) "1231 Derp St Merp"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #4" assertions="1" time="0.000179">
+          <system-out>string(18) "1231, Derp St Merp"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #5" assertions="1" time="0.000174">
+          <system-out>string(19) "1231, Derp St, Merp"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #6" assertions="1" time="0.000163">
+          <system-out>string(12) "0429 109 091"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckAddress with data set #7" assertions="1" time="0.000172">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckPost" tests="9" assertions="9" failures="0" errors="0" time="0.001530">
+        <testcase name="testCheckPost with data set #0" assertions="1" time="0.000238">
+          <system-out>string(4) "1409"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #1" assertions="1" time="0.000165">
+          <system-out>string(4) "1209"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #2" assertions="1" time="0.000159">
+          <system-out>string(4) "4000"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #3" assertions="1" time="0.000161">
+          <system-out>string(4) "9999"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #4" assertions="1" time="0.000161">
+          <system-out>string(2) "39"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #5" assertions="1" time="0.000160">
+          <system-out>string(5) "29999"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #6" assertions="1" time="0.000162">
+          <system-out>string(3) "1 2"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #7" assertions="1" time="0.000160">
+          <system-out>string(5) "A2222"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPost with data set #8" assertions="1" time="0.000164">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckState" tests="11" assertions="11" failures="0" errors="0" time="0.001879">
+        <testcase name="testCheckState with data set #0" assertions="1" time="0.000231">
+          <system-out>string(3) "QLD"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #1" assertions="1" time="0.000168">
+          <system-out>string(3) "NSW"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #2" assertions="1" time="0.000164">
+          <system-out>string(3) "VIC"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #3" assertions="1" time="0.000161">
+          <system-out>string(2) "NT"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #4" assertions="1" time="0.000165">
+          <system-out>string(3) "ACT"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #5" assertions="1" time="0.000197">
+          <system-out>string(3) "TAS"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #6" assertions="1" time="0.000161">
+          <system-out>string(2) "SA"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #7" assertions="1" time="0.000158">
+          <system-out>string(2) "WA"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #8" assertions="1" time="0.000156">
+          <system-out>string(4) "DERP"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #9" assertions="1" time="0.000162">
+          <system-out>string(3) "W A"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckState with data set #10" assertions="1" time="0.000156">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckMatch" tests="13" assertions="13" failures="0" errors="0" time="0.002106">
+        <testcase name="testCheckMatch with data set #0" assertions="1" time="0.000158">
+          <system-out>string(15) "somethingRandom"
+string(15) "somethingRandom"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #1" assertions="1" time="0.000176">
+          <system-out>int(12929)
+int(12929)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #2" assertions="1" time="0.000167">
+          <system-out>string(4) "MERP"
+string(4) "MERP"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #3" assertions="1" time="0.000160">
+          <system-out>bool(true)
+bool(true)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #4" assertions="1" time="0.000156">
+          <system-out>string(14) "291, Something"
+string(14) "291, Something"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #5" assertions="1" time="0.000157">
+          <system-out>string(0) ""
+string(0) ""
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #6" assertions="1" time="0.000156">
+          <system-out>string(26) "SoMETHING2019Mo@CoMpleX213"
+string(26) "SoMETHING2019Mo@CoMpleX213"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #7" assertions="1" time="0.000157">
+          <system-out>string(4) "Derp"
+string(4) "Herp"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #8" assertions="1" time="0.000161">
+          <system-out>int(12)
+int(14)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #9" assertions="1" time="0.000174">
+          <system-out>string(2) "12"
+string(2) "15"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #10" assertions="1" time="0.000166">
+          <system-out>string(16) "Something random"
+string(14) "Something else"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #11" assertions="1" time="0.000160">
+          <system-out>bool(true)
+bool(false)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckMatch with data set #12" assertions="1" time="0.000158">
+          <system-out>string(0) ""
+string(1) " "
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckWeight" tests="11" assertions="11" failures="0" errors="0" time="0.001841">
+        <testcase name="testCheckWeight with data set #0" assertions="1" time="0.000236">
+          <system-out>string(3) "123"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #1" assertions="1" time="0.000160">
+          <system-out>string(2) "14"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #2" assertions="1" time="0.000160">
+          <system-out>string(4) "1231"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #3" assertions="1" time="0.000171">
+          <system-out>int(14)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #4" assertions="1" time="0.000165">
+          <system-out>string(1) "1"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #5" assertions="1" time="0.000161">
+          <system-out>string(2) "19"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #6" assertions="1" time="0.000160">
+          <system-out>string(5) "22222"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #7" assertions="1" time="0.000158">
+          <system-out>int(0)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #8" assertions="1" time="0.000157">
+          <system-out>string(1) "0"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #9" assertions="1" time="0.000157">
+          <system-out>string(12) "not a weight"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckWeight with data set #10" assertions="1" time="0.000156">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckTime" tests="9" assertions="9" failures="0" errors="0" time="0.001607">
+        <testcase name="testCheckTime with data set #0" assertions="1" time="0.000236">
+          <system-out>string(19) "0000-00-00T00:00:00"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #1" assertions="1" time="0.000160">
+          <system-out>string(19) "2016-09-14T14:03:00"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #2" assertions="1" time="0.000224">
+          <system-out>string(19) "2016-10-01T20:13:05"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #3" assertions="1" time="0.000162">
+          <system-out>string(20) "2016-10-01T20:13:05A"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #4" assertions="1" time="0.000177">
+          <system-out>string(19) "-102-10-01T20:13:05"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #5" assertions="1" time="0.000165">
+          <system-out>string(21) "20000-110-01T20:13:05"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #6" assertions="1" time="0.000167">
+          <system-out>int(20)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #7" assertions="1" time="0.000159">
+          <system-out>string(10) "20/11/1995"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckTime with data set #8" assertions="1" time="0.000157">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckStatus" tests="11" assertions="11" failures="0" errors="0" time="0.001832">
+        <testcase name="testCheckStatus with data set #0" assertions="1" time="0.000231">
+          <system-out>string(7) "Ordered"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #1" assertions="1" time="0.000160">
+          <system-out>string(10) "Picking Up"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #2" assertions="1" time="0.000171">
+          <system-out>string(9) "Picked Up"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #3" assertions="1" time="0.000165">
+          <system-out>string(7) "Storing"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #4" assertions="1" time="0.000160">
+          <system-out>string(10) "Delivering"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #5" assertions="1" time="0.000160">
+          <system-out>string(9) "Delivered"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #6" assertions="1" time="0.000158">
+          <system-out>string(5) "22222"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #7" assertions="1" time="0.000156">
+          <system-out>int(0)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #8" assertions="1" time="0.000156">
+          <system-out>string(1) "0"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #9" assertions="1" time="0.000158">
+          <system-out>string(11) "Delivereddd"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckStatus with data set #10" assertions="1" time="0.000157">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckPriority" tests="7" assertions="7" failures="0" errors="0" time="0.001224">
+        <testcase name="testCheckPriority with data set #0" assertions="1" time="0.000228">
+          <system-out>string(8) "Standard"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPriority with data set #1" assertions="1" time="0.000176">
+          <system-out>string(7) "Express"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPriority with data set #2" assertions="1" time="0.000175">
+          <system-out>string(1) "1"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPriority with data set #3" assertions="1" time="0.000164">
+          <system-out>int(0)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPriority with data set #4" assertions="1" time="0.000162">
+          <system-out>string(1) "0"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPriority with data set #5" assertions="1" time="0.000161">
+          <system-out>string(3) ":^)"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPriority with data set #6" assertions="1" time="0.000158">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="ValidationTest::testCheckInt" tests="9" assertions="9" failures="0" errors="0" time="0.001472">
+        <testcase name="testCheckInt with data set #0" assertions="1" time="0.000164">
+          <system-out>int(30)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #1" assertions="1" time="0.000158">
+          <system-out>int(1)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #2" assertions="1" time="0.000157">
+          <system-out>int(99)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #3" assertions="1" time="0.000157">
+          <system-out>string(2) "99"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #4" assertions="1" time="0.000158">
+          <system-out>string(1) "1"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #5" assertions="1" time="0.000172">
+          <system-out>string(1) "0"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #6" assertions="1" time="0.000171">
+          <system-out>int(0)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #7" assertions="1" time="0.000172">
+          <system-out>string(3) ":^)"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckInt with data set #8" assertions="1" time="0.000163">
+          <system-out>string(0) ""
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="OrdersTest" file="G:\xampp\htdocs\IFB299\tests\ordersTest.php" tests="2" assertions="32" failures="0" errors="0" time="0.000510">
+      <testsuite name="OrdersTest::testConstructorOrder" tests="2" assertions="32" failures="0" errors="0" time="0.000510">
+        <testcase name="testConstructorOrder with data set #0" assertions="16" time="0.000266">
+          <system-out>array(16) {
+  ["orderID"]=&gt;
+  string(1) "1"
+  ["userID"]=&gt;
+  string(3) "332"
+  ["status"]=&gt;
+  string(7) "Ordered"
+  ["description"]=&gt;
+  string(15) "Something Heavy"
+  ["signature"]=&gt;
+  string(1) "1"
+  ["priority"]=&gt;
+  string(7) "Express"
+  ["pickupAddress"]=&gt;
+  string(30) "13 Somewhere Street, Someplace"
+  ["pickupPostcode"]=&gt;
+  string(4) "4201"
+  ["pickupState"]=&gt;
+  string(3) "QLD"
+  ["pickupTime"]=&gt;
+  string(19) "2016-09-10 09:30:00"
+  ["deliveryAddress"]=&gt;
+  string(37) "29 AnotherPlace Street, SomewhereElse"
+  ["deliveryPostcode"]=&gt;
+  string(4) "2920"
+  ["deliveryState"]=&gt;
+  string(3) "NSW"
+  ["deliveryTime"]=&gt;
+  string(19) "2016-09-11 09:30:00"
+  ["recipientName"]=&gt;
+  string(3) "Bob"
+  ["recipientPhone"]=&gt;
+  string(6) "Darren"
+}
+</system-out>
+        </testcase>
+        <testcase name="testConstructorOrder with data set #1" assertions="16" time="0.000244">
+          <system-out>array(16) {
+  ["orderID"]=&gt;
+  string(2) "13"
+  ["userID"]=&gt;
+  string(3) "423"
+  ["status"]=&gt;
+  string(7) "Ordered"
+  ["description"]=&gt;
+  string(14) "Something Else"
+  ["signature"]=&gt;
+  string(1) "0"
+  ["priority"]=&gt;
+  string(8) "Standard"
+  ["pickupAddress"]=&gt;
+  string(27) "12 Merp Drive, AnotherPlace"
+  ["pickupPostcode"]=&gt;
+  string(4) "4001"
+  ["pickupState"]=&gt;
+  string(3) "QLD"
+  ["pickupTime"]=&gt;
+  string(19) "2016-09-11 12:30:00"
+  ["deliveryAddress"]=&gt;
+  string(21) "31 Okay Street, Place"
+  ["deliveryPostcode"]=&gt;
+  string(4) "1920"
+  ["deliveryState"]=&gt;
+  string(3) "VIC"
+  ["deliveryTime"]=&gt;
+  string(19) "2016-09-14 09:30:00"
+  ["recipientName"]=&gt;
+  string(4) "Merp"
+  ["recipientPhone"]=&gt;
+  string(4) "Herp"
+}
+</system-out>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="PermissionsTest" file="G:\xampp\htdocs\IFB299\tests\permissionsTest.php" tests="35" assertions="35" failures="0" errors="0" time="0.008788">
+      <testsuite name="PermissionsTest::testCheckPermission" tests="35" assertions="35" failures="0" errors="0" time="0.008788">
+        <testcase name="testCheckPermission with data set #0" assertions="1" time="0.000329">
+          <system-out>int(0)
+string(24) "create-staff-account.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #1" assertions="1" time="0.000259">
+          <system-out>int(1)
+string(24) "create-staff-account.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #2" assertions="1" time="0.000272">
+          <system-out>int(2)
+string(24) "create-staff-account.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #3" assertions="1" time="0.000260">
+          <system-out>int(3)
+string(24) "create-staff-account.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #4" assertions="1" time="0.000258">
+          <system-out>int(4)
+string(24) "create-staff-account.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #5" assertions="1" time="0.000244">
+          <system-out>int(0)
+string(14) "view-order.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #6" assertions="1" time="0.000251">
+          <system-out>int(1)
+string(14) "view-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #7" assertions="1" time="0.000240">
+          <system-out>int(2)
+string(14) "view-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #8" assertions="1" time="0.000270">
+          <system-out>int(3)
+string(14) "view-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #9" assertions="1" time="0.000258">
+          <system-out>int(4)
+string(14) "view-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #10" assertions="1" time="0.000245">
+          <system-out>int(0)
+string(15) "phone-order.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #11" assertions="1" time="0.000243">
+          <system-out>int(1)
+string(15) "phone-order.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #12" assertions="1" time="0.000243">
+          <system-out>int(2)
+string(15) "phone-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #13" assertions="1" time="0.000240">
+          <system-out>int(3)
+string(15) "phone-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #14" assertions="1" time="0.000239">
+          <system-out>int(4)
+string(15) "phone-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #15" assertions="1" time="0.000256">
+          <system-out>int(0)
+string(17) "edit-accounts.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #16" assertions="1" time="0.000252">
+          <system-out>int(1)
+string(17) "edit-accounts.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #17" assertions="1" time="0.000244">
+          <system-out>int(2)
+string(17) "edit-accounts.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #18" assertions="1" time="0.000242">
+          <system-out>int(3)
+string(17) "edit-accounts.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #19" assertions="1" time="0.000241">
+          <system-out>int(4)
+string(17) "edit-accounts.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #20" assertions="1" time="0.000240">
+          <system-out>int(0)
+string(14) "view-users.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #21" assertions="1" time="0.000249">
+          <system-out>int(1)
+string(14) "view-users.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #22" assertions="1" time="0.000252">
+          <system-out>int(2)
+string(14) "view-users.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #23" assertions="1" time="0.000244">
+          <system-out>int(3)
+string(14) "view-users.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #24" assertions="1" time="0.000239">
+          <system-out>int(4)
+string(14) "view-users.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #25" assertions="1" time="0.000238">
+          <system-out>int(0)
+string(14) "edit-order.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #26" assertions="1" time="0.000238">
+          <system-out>int(1)
+string(14) "edit-order.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #27" assertions="1" time="0.000244">
+          <system-out>int(2)
+string(14) "edit-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #28" assertions="1" time="0.000245">
+          <system-out>int(3)
+string(14) "edit-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #29" assertions="1" time="0.000263">
+          <system-out>int(4)
+string(14) "edit-order.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #30" assertions="1" time="0.000246">
+          <system-out>int(0)
+string(23) "package-information.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #31" assertions="1" time="0.000255">
+          <system-out>int(1)
+string(23) "package-information.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #32" assertions="1" time="0.000248">
+          <system-out>int(2)
+string(23) "package-information.php"
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #33" assertions="1" time="0.000243">
+          <system-out>int(3)
+string(23) "package-information.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testCheckPermission with data set #34" assertions="1" time="0.000258">
+          <system-out>int(4)
+string(23) "package-information.php"
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="RolesTest" file="G:\xampp\htdocs\IFB299\tests\rolesTest.php" tests="8" assertions="8" failures="0" errors="0" time="0.001294">
+      <testsuite name="RolesTest::testConstructorUser" tests="8" assertions="8" failures="0" errors="0" time="0.001294">
+        <testcase name="testConstructorUser with data set #0" assertions="1" time="0.000184">
+          <system-out>int(0)
+int(0)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #1" assertions="1" time="0.000160">
+          <system-out>int(1)
+int(1)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #2" assertions="1" time="0.000161">
+          <system-out>int(2)
+int(2)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #3" assertions="1" time="0.000160">
+          <system-out>int(3)
+int(3)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #4" assertions="1" time="0.000158">
+          <system-out>int(4)
+int(4)
+bool(true)
+bool(true)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #5" assertions="1" time="0.000159">
+          <system-out>int(4)
+int(0)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #6" assertions="1" time="0.000156">
+          <system-out>int(0)
+int(4)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #7" assertions="1" time="0.000156">
+          <system-out>int(3)
+int(1)
+bool(false)
+bool(false)
+</system-out>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="UsersTest" file="G:\xampp\htdocs\IFB299\tests\usersTest.php" tests="3" assertions="21" failures="0" errors="0" time="0.000565">
+      <testsuite name="UsersTest::testConstructorUser" tests="3" assertions="21" failures="0" errors="0" time="0.000565">
+        <testcase name="testConstructorUser with data set #0" assertions="7" time="0.000195">
+          <system-out>string(13) "bob@email.com"
+string(3) "Bob"
+string(6) "Marley"
+string(13) "(07)3129 1290"
+string(20) "15 Herp Street, Derp"
+string(4) "4001"
+string(3) "QLD"
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #1" assertions="7" time="0.000185">
+          <system-out>string(13) "misha@rip.com"
+string(5) "Misha"
+string(7) "TheD00D"
+string(9) "3129 1290"
+string(19) "52 Merp Drive, Derp"
+string(4) "3234"
+string(3) "VIC"
+</system-out>
+        </testcase>
+        <testcase name="testConstructorUser with data set #2" assertions="7" time="0.000185">
+          <system-out>string(14) "herp@email.com"
+string(4) "Herp"
+string(4) "Derp"
+string(12) "0429 123 123"
+string(20) "15 Herp Street, Derp"
+string(4) "2342"
+string(3) "NSW"
+</system-out>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

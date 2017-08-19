@@ -1,0 +1,18 @@
+Sprint 1 Planning Meeting
+
+*Note that most 'official' sprint planning was done over the previous few weeks as part of the 'User Stories, Release & Sprint Plan
+criteria'.
+
+--Discussed how not enough work had been completed, noting that as of now we are not on track to 
+	complete sprint 1 and that we were beginning the sprint one week late.
+
+--Made plans and organised short-term timelines to complete immediate work, specifically the creation of basic html to 
+	allow for backend coding progress to start. Making allowances for Father's Day.
+
+--Discussed database, and noted some minor changes that needed to be made.
+
+--Discussed broad outlines on how to actually implement each webpage planned for sprint 1.
+
+--All team members shown how git repositories worked.
+
+--Concluded meeting.

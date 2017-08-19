@@ -1,0 +1,9 @@
+Sprint 2 Planning Meeting
+
+--Updated sprint plan to include remaining user stories and tasks from release 1.
+
+--Unfinished user story(phone order) moved to Sprint 2
+
+--Discussed which user stores should initially be focused on by who.
+
+--Conluded meeting
